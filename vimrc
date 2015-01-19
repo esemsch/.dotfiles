@@ -43,6 +43,9 @@ Plugin 'mitsuhiko/vim-jinja'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
+" NSF autocomplete
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+
 call vundle#end()            " required
 filetype plugin indent on    " enable file detection
 
