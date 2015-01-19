@@ -71,13 +71,6 @@ set t_Co=256
 let mapleader = ","
 let g:mapleader = ","
 
-" remap hjkl
-noremap ' l
-noremap ; k
-noremap l j
-noremap k h
-nnoremap . ;
-
 " Fast saving
 nmap <leader>w :w!<cr>
 " Fast quitting
@@ -112,3 +105,7 @@ let g:go_highlight_structs = 1
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
+
+map <F3> <Plug>(go-def-tab)
+map <F11> :w<CR> <Plug>(go-run)
+map <F10> :w<CR> <Plug>(go-test)
